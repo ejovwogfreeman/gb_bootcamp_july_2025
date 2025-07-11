@@ -60,8 +60,113 @@
     <a href="https://facebook.com" target="_blank">facebook</a>
     <a href="https://google.com" target="_blank">google</a>
     <a href="about.html" target="_self">Visit about page</a>
+
+    <!-- lists (ol and ul) -->
+    <ol>
+      <h3>My favorite foods are</h3>
+      <li>Rice</li>
+      <li>Beans</li>
+      <li>Pasta</li>
+      <li>Yam and egg sauce</li>
+      <li>Noodles</li>
+    </ol>
+
+    <ul>
+      <h3>My favorite movies are</h3>
+      <li>Merlin</li>
+      <li>Game of thrones</li>
+      <li>Legend of the seeker</li>
+      <li>Legend of Aang</li>
+      <li>Legend of Kora</li>
+    </ul>
+    <hr />
+    <!-- table -->
+    <table border style="width: 100%">
+      <tr>
+        <th>S/N</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Mark Powells</td>
+        <td>mark@gmail.com</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>John Doe</td>
+        <td>john@company.com</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Mary Smith</td>
+        <td>mary@yahoo.com</td>
+      </tr>
+    </table>
+    <hr />
+
+    <!-- forms -->
+    <form>
+      <label for="">Name</label> <br />
+      <input type="text" placeholder="e.g John Doe" required /> <br /><br />
+      <label for="">Email</label><br />
+      <input type="email" value="john@gmail.com" readonly /> <br /><br />
+      <label for="">D.O.B</label><br />
+      <input type="date" /> <br /><br />
+      <label for="">Age</label><br />
+      <input type="number" /> <br /><br />
+      <label for="">Time</label><br />
+      <input type="time" /> <br /><br />
+      <label for="">Color</label><br />
+      <input type="color" /> <br /><br />
+      <label for="">Range</label><br />
+      <input type="range" /> <br /><br />
+      <label for="">Document</label><br />
+      <input type="file" /> <br /><br />
+      <label for="">Documents</label><br />
+      <input type="file" multiple /> <br /><br />
+
+      <!-- radio -->
+      <label for="">Religion</label> <br />
+      <input type="radio" name="religion" /> <label for="">Chiristian</label>
+      <input type="radio" name="religion" /> <label for="">Muslim</label>
+      <input type="radio" name="religion" /> <label for="">Others</label
+      ><br /><br />
+
+      <!-- checkbox -->
+      <label for="">Skillsets</label> <br />
+      <input type="checkbox" /> <label for="">Web design</label> <br />
+      <input type="checkbox" /> <label for="">Web development</label><br />
+      <input type="checkbox" /> <label for="">ui/ux</label><br />
+      <input type="checkbox" /> <label for="">corel draw</label><br />
+      <input type="checkbox" /> <label for="">data science</label><br />
+      <input type="checkbox" /> <label for="">data analytics</label>
+      <br /><br />
+
+      <!-- select -->
+      <label for="">Skill</label> <br />
+      <select name="" id="">
+        <optgroup label="web">
+          <option value="">web design</option>
+          <option value="">web development</option>
+        </optgroup>
+        <optgroup label="design">
+          <option value="">ui/ux</option>
+          <option value="">corel draw</option>
+        </optgroup>
+        <optgroup label="python">
+          <option value="">data science</option>
+          <option value="">data analytics</option>
+        </optgroup>
+      </select>
+      <br /><br />
+      <input type="submit" value="create account" />
+      <!-- <button>Submit</button> -->
+    </form>
+
+    <div style="padding: 100px"></div>
   </body>
-  <div style="padding: 100px"></div>
+
   <script>
     let body = document.querySelector("body");
     function darkMode() {
