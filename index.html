@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTM class</title>
+  </head>
+  <body>
+    <!-- html makes use of tags/elements -->
+    <h1>Hello world</h1>
+    <p>Hello world my name is gb and I am learning web dev</p>
+
+    <!-- ctrl + / => gives comment -->
+    <h1 style="background-color: red">Heading one</h1>
+    <h2>Heading two</h2>
+    <h3>Heading three</h3>
+    <h4>Heading four</h4>
+    <h5>Heading five</h5>
+    <h6>Heading six</h6>
+
+    <!-- paragraph -->
+    <p>Hello, my name is GB</p>
+    <hr />
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita odit
+      eveniet repellat qui asperiores harum maiores, est, voluptas voluptates
+      consequuntur distinctio odio ipsa perferendis commodi facilis numquam
+      earum nam consequatur?
+    </p>
+
+    <!-- div -->
+    <hr />
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores vel
+      officiis voluptatum veritatis, break here <br />
+      totam provident similique ut sapiente alias, minus ratione ipsum ipsa modi
+      at temporibus soluta libero odit autem?
+    </div>
+
+    <!-- hr and br -->
+    <!-- br -> line brak, hr -> horizontal rule -->
+    <hr />
+    <!-- inline elements -->
+    <!-- Block level element are elements that takes up the width of the browser -->
+    <!-- Inline elements are elements that take just the width of their contents -->
+    <p>
+      the <strong style="background-color: red">quick</strong> <em>brown</em>
+      <u>fox</u> <mark>jumped</mark> <del>over</del> <strike>the</strike> l<span
+        style="color: red"
+        >a</span
+      >zy dog... <abbr title="World Health Organisation">WHO</abbr
+      ><span title="Hyper Text Markup Language">HTML</span>
+    </p>
+    <hr />
+    <!-- links and buttos -->
+    <button onclick="alert('HTML Class')">Click me</button>
+    <button onclick="lightMode()">Light Mode</button>
+    <button onclick="darkMode()">Dark Mode</button>
+    <hr />
+    <a href="https://facebook.com" target="_blank">facebook</a>
+    <a href="https://google.com" target="_blank">google</a>
+    <a href="about.html" target="_self">Visit about page</a>
+  </body>
+  <div style="padding: 100px"></div>
+  <script>
+    let body = document.querySelector("body");
+    function darkMode() {
+      body.style.background = "black";
+      body.style.color = "white";
+    }
+    function lightMode() {
+      body.style.background = "white";
+      body.style.color = "black";
+    }
+  </script>
+</html>
